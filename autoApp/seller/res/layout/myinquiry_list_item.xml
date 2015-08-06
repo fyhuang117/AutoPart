@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/common_padding_middle"
+              android:background="@color/white"
+        >
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_padding_middle"
+                    android:paddingBottom="@dimen/common_padding_middle"
+                    android:paddingRight="@dimen/common_padding_small"
+            >
+
+        <TextView android:id="@+id/inquiry_title"
+                  style="@style/common_text"
+                  android:text="保险杠"
+                  android:textColor="@color/text_orange"
+                  android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/inquiry_num"
+                  style="@style/CommonTextView_Style"
+                  android:text="新"
+                  android:background="@drawable/custom_oval_red"
+                  android:layout_toRightOf="@+id/inquiry_title"
+                  android:textColor="@color/white"
+                  android:layout_marginLeft="@dimen/common_margin_top"
+                  android:gravity="center"
+                  android:layout_centerVertical="true"/>
+
+        <TextView android:id="@+id/inquiry_distance"
+                  style="@style/CommonTextView_Style"
+                  android:text="距离25公里"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+
+    <TextView android:id="@+id/inquiry_name"
+              style="@style/CommonTextView_Content"
+              android:layout_marginTop="@dimen/common_margin"
+              android:text="现货 OME 质保 1年 在线支付 邮费￥100"/>
+
+    <include layout="@layout/hor_image_view"/>
+
+    <View style="@style/line"/>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_padding_middle"
+                    android:paddingBottom="@dimen/common_padding_middle"
+                    android:paddingRight="@dimen/common_padding_small"
+            >
+
+        <TextView android:id="@+id/inquiry_seller_num"
+                  style="@style/CommonTextView_Content"
+                  android:text="￥10000.00"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/money_color"
+                  android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

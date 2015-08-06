@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_order_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <include layout="@layout/my_order_info"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_width"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="3">
+
+        <TextView android:id="@+id/detail_online"
+                  android:layout_weight="1"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  style="@style/CommonButton"
+                  android:background="@color/main_bottom_color"
+                  android:text="实付款：￥100100.00"
+                />
+        <Button
+                style="@style/CommonButton"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_bg_selector"
+                android:layout_weight="2"
+                android:onClick="order"
+                android:text="@string/order_text_commit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

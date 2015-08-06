@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:paddingLeft="@dimen/common_padding" >
+    <RelativeLayout android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_padding_middle"
+                    android:paddingBottom="@dimen/common_padding_middle"
+            >
+        <ImageView android:id="@+id/menu_icon"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_centerVertical="true"
+                   android:src="@drawable/menu_icon_mine"/>
+
+        <TextView android:id="@+id/title"
+                  style="@style/common_text"
+                  android:text="111"
+                  android:layout_marginLeft="@dimen/common_margin"
+                  android:layout_toRightOf="@+id/menu_icon"
+                  android:layout_centerVertical="true"/>
+
+        <TextView android:id="@+id/num"
+                  style="@style/CommonTextView_Time"
+                  android:textColor="@color/white"
+                  android:gravity="center"
+                  android:text="1"
+                  android:layout_toRightOf="@+id/title"
+                  android:layout_marginLeft="@dimen/common_margin"
+                  android:background="@drawable/custom_oval_red"
+                  android:layout_centerVertical="true"/>
+
+        <ImageView style="@style/image_right"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line"
+          android:layout_below="@+id/view"/>
+
+
+</RelativeLayout>

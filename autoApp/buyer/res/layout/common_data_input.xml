@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/search_input_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:visibility="gone">
+
+
+    <TextView android:id="@+id/viewpager_item_text"
+              style="@style/CommonTextView_Content"
+              android:visibility="visible"
+              android:textColor="@color/grey_text"
+              android:layout_marginTop="@dimen/common_margin"
+              android:layout_marginLeft="@dimen/common_padding_middle"
+              android:layout_marginRight="@dimen/common_padding_middle"
+              android:text="@string/inquiry_model_search"/>
+
+    <EditText android:id="@+id/search_input"
+              style="@style/common_text"
+              android:layout_width="match_parent"
+              android:layout_margin="@dimen/common_margin"
+              android:layout_toLeftOf="@+id/icon_search"
+              android:padding="@dimen/common_padding_middle"
+              android:layout_centerVertical="true"
+              android:background="@drawable/custom_dialog_bg"
+              android:hint="搜索结果为空，请手动输入"/>
+
+
+    <Button android:id="@+id/search_commint"
+            style="@style/CommonButtonMargin"
+            android:text="提交"
+            android:layout_marginTop="@dimen/common_padding"
+            android:onClick="commit_input"/>
+
+
+</LinearLayout>

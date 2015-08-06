@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">哦了汽配</string>
+
+    <string name="my_inquiry_text">询价中</string>
+    <string name="my_order_text">全部订单</string>
+    <string name="my_order_null">暂无进行中的订单</string>
+    <string name="my_order_detail">我的订单详情</string>
+
+    <string name="my_inquiry_accessory">询价车型配件</string>
+    <string name="my_inquiry_other">其它要求</string>
+    <string name="my_inquiry_voice">捎句话</string>
+    <string name="my_inquiry_wearing">询价保养易损件</string>
+    <string name="my_inquiry_consumable">询价汽保耗材</string>
+
+    <string name="my_inquiry_accessory_d">保险杠、翼子板、水箱、装饰改装…</string>
+    <string name="my_inquiry_wearing_d">机油机滤，刹车盘片，轮胎，正时皮带…</string>
+    <string name="my_inquiry_consumable_d">举升机，美容用品，油漆辅料…</string>
+    <string name="my_info">维护我的资料</string>
+    <string name="photo_camera">拍照</string>
+    <string name="photo_gallery">相册选择</string>
+
+    <!--询价-->
+    <string name="inquiry_text_model">车型</string>
+    <string name="inquiry_text_year">年款</string>
+    <string name="inquiry_text_sort">配件分类</string>
+    <string name="inquiry_text_sortV">易损件分类</string>
+    <string name="inquiry_text_sortC">汽保耗材分类</string>
+    <string name="inquiry_text_category">品牌</string>
+    <string name="inquiry_text_quality">品质</string>
+    <string name="inquiry_text_num">数量</string>
+    <string name="inquiry_text_photo">您可以上传三张照片，例如：配件照片，车架型号等</string>
+    <string name="inquiry_text_media">添加文字或者30秒录音</string>
+    <string name="inquiry_text_voice">捎句话</string>
+    <string name="inquiry_text_commit">询价</string>
+    <string name="inquiry_text_history">历史记录</string>
+    <string name="inquiry_text_cancel">取消询价</string>
+    <string name="inquiry_text_order">询价单</string>
+    <string name="inquiry_text_seller">报价商家</string>
+    <string name="inquiry_text_quote">报价</string>
+    <string name="inquiry_text_quote_company">报价公司</string>
+    <string name="inquiry_text_message">买家留言</string>
+    <string name="inquiry_text_message_seller">卖家留言</string>
+    <string name="inquiry_text_detail">报价详情</string>
+    <string name="inquiry_text_list">报价列表</string>
+    <string name="inquiry_text_pay_style">支付方式</string>
+    <string name="inquiry_text_send_style">送货方式</string>
+    <string name="inquiry_text_online">在线咨询</string>
+    <string name="inquiry_text_orders">下单</string>
+    <string name="inquiry_brand_nul">不限</string>
+    <string name="inquiry_model_search">没有找到相似配件，请重新输入关键字或者手工输入配件信息</string>
+    <string name="inquiry_model_search_null">没有找到相似配件，请重新输入关键字搜索</string>
+
+    <!--<string name="inquiry_parts_null">暂无配件信息</string>-->
+    <!--<string name="inquiry_car_null">无相关车型信息</string>-->
+    <string name="inquiry_parts_null"></string>
+    <string name="inquiry_car_null"></string>
+
+
+    <string name="state_being">竞价中</string>
+    <string name="state_wait">待收货</string>
+
+    <string name="order_text_write">填写订单</string>
+    <string name="order_text_pay_send">支付配送</string>
+    <string name="order_text_invoice">发票信息</string>
+    <string name="order_text_money">商品金额</string>
+    <string name="order_text_freight">运费</string>
+    <string name="order_text_discount">优惠券</string>
+    <string name="order_text_commit">提交订单</string>
+    <string name="order_text_cancle">取消</string>
+    <string name="order_text_no">订单号：%1$s</string>
+    <string name="order_text_time">下单时间：%1$s</string>
+    <string name="order_text_real_pay">实付：%1$s</string>
+    <string name="order_text_real">实付款：</string>
+
+    <string name="order_text_pay">付款</string>
+    <string name="order_text_contact">联系卖家</string>
+    <string name="order_text_inquiry">再次询价</string>
+    <string name="order_text_del">删除订单</string>
+    <string name="order_has_del">该询价单已取消</string>
+    <string name="order_save_success">下单成功</string>
+    <string name="order_pay_success">付款成功</string>
+    <string name="order_score_success">评价成功</string>
+    <string name="order_send_success">已发货</string>
+    <string name="order_receive_success">收货成功</string>
+    <string name="order_receive_hint">是否确认收货,确认后商家将收到您的付款</string>
+
+    <string name="order_text_evaluate">评价</string>
+    <string name="order_text_receipt">收货</string>
+    <string name="order_evaluate">点评</string>
+    <string name="order_evaluate_text1">实物与描述相符</string>
+    <string name="order_evaluate_text2">服务态度</string>
+    <string name="order_evaluate_text3">发货速度</string>
+    <string name="order_evaluate_hint">确认评价？</string>
+    <string name="order_min_money">最低报价：￥%1$s</string>
+    <string name="order_mum_bc">报价商家:%1$d(家)</string>
+
+    <string name="pay_later">稍后支付</string>
+    <string name="pay_now">立即支付</string>
+    <string name="pay_title">支付宝支付</string>
+
+    <string name="inquiry_text_accessory">输入配件关键字，如保险杠</string>
+
+    <string name="login_hint_prompt">为了防止用户信息被盗用，请使用本机号码登录</string>
+    <string name="login_hint_prompt_info">该商户首次登陆,需要填写以下信息,以保证后续正常收货.</string>
+    <string name="login_hint_phone">请输入手机号码</string>
+    <string name="login_hint_message">请输入短信验证码</string>
+    <string name="login_hint_name">商户名称</string>
+    <string name="login_hint_address">商户地址</string>
+    <string name="login_get_code">获取验证码</string>
+    <string name="login_commit">登 录</string>
+    <string name="login_user_info">补全用户信息</string>
+    <string name="login_continue">继 续</string>
+    <string name="login_agree">同意并接受哦了汽配的</string>
+    <string name="login_deal">服务条款</string>
+
+    <string name="login_null_phone">请先输入手机号</string>
+    <string name="login_error_phone">请正确输入11位手机号码</string>
+    <string name="login_null_code">请先输入验证码</string>
+    <string name="login_code_timer">重新发送%1$dS</string>
+    <string name="login_null_name">请先输入商户名称</string>
+    <string name="login_null_address">请正确输入商户地址</string>
+
+    <string name="more_system">系统信息</string>
+    <string name="more_checkout">检测更新</string>
+    <string name="more_version">系统版本号</string>
+
+    <string name="user_info">我的资料</string>
+
+    <string name="confirm_ok">确定</string>
+    <string name="confirm_cancel">取消</string>
+    <string name="confirm_prompt">提示</string>
+
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">close_drawer</string>
+
+    <string name="message_title">我的消息</string>
+    <string name="waller_title">我的钱包</string>
+    <string name="network_unavailable">网络连接不可用,请稍后重试</string>
+
+    <string name="company_title">商家简介</string>
+    <string name="message_text_null">无文字留言</string>
+
+    <string name="user_info_commit">审核已经提交请耐心等待，如有疑问请联系客服</string>
+    <string name="user_info_commit_hint">审核通过的用户部分内容不能修改，请通过\"联系客服\"变更相关信息</string>
+
+</resources>

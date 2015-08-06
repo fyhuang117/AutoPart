@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background">
+
+    <include layout="@layout/common_top_bar"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/common_padding_middle"
+                  android:clickable="true"
+                  android:orientation="horizontal"
+                  android:background="@color/white"
+                  android:gravity="center_vertical">
+
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center_vertical"
+                      android:layout_marginLeft="@dimen/common_padding_middle">
+            <TextView android:id="@+id/company_name"
+                      style="@style/common_text"
+                      android:text=""
+                    />
+
+                   </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+            >
+        <RelativeLayout android:id="@+id/school_tel_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/listview_item_bg_selector"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:paddingRight="@dimen/common_padding_middle"
+                        android:onClick="tel"
+                        android:paddingBottom="@dimen/common_margin"
+                        android:paddingTop="@dimen/common_margin">
+
+            <ImageView android:id="@+id/school_tel_icon"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/school_icon_tel"/>
+
+            <TextView android:id="@+id/tel"
+                      style="@style/CommonTextView_Content"
+                      android:text=""
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/common_padding_middle"
+                      android:layout_toRightOf="@+id/school_tel_icon"/>
+
+            <!--<ImageView android:id="@+id/common_item_icon"-->
+            <!--style="@style/CommonRightImage"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+
+        </RelativeLayout>
+
+        <View android:id="@+id/line"
+              style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding"/>
+
+        <RelativeLayout android:id="@+id/school_address_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/listview_item_bg_selector"
+                        android:paddingLeft="@dimen/common_padding"
+                        android:paddingRight="@dimen/common_padding_middle"
+                        android:paddingBottom="@dimen/common_margin"
+                        android:paddingTop="@dimen/common_margin">
+
+            <ImageView android:id="@+id/school_address_icon"
+                       android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/school_icon_address"/>
+
+            <TextView android:id="@+id/address"
+                      style="@style/CommonTextView_Content"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/school_address_icon"
+                      android:layout_marginLeft="@dimen/common_padding_middle"
+                    android:text=""/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

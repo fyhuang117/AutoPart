@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="@color/background">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:padding="@dimen/common_padding"
+                    android:background="@drawable/common_shade_bg">
+
+        <TextView
+                style="@style/CommonTextView_White"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:text="账户余额（元）"/>
+
+        <TextView
+                style="@style/CommonTextView_White"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:text="详情 >"/>
+
+        <TextView android:id="@+id/wallet_money"
+                  style="@style/CommonTextView_White"
+                  android:textSize="30dp"
+                  android:layout_centerInParent="true"
+                  android:text="0.00"/>
+
+        <TextView android:id="@+id/wallet_money_will"
+                  style="@style/CommonTextView_White"
+                  android:layout_centerInParent="true"
+                  android:layout_marginTop="@dimen/common_margin"
+                  android:layout_below="@+id/wallet_money"
+                  android:text="即将到账0.00元 "/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2"
+                  android:padding="@dimen/common_padding"
+                  android:background="@color/white">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+            <TextView
+                    style="@style/common_text"
+                    android:text="累计收入（元）"/>
+            <TextView
+                    style="@style/common_text"
+                    android:textSize="22dp"
+                    android:layout_marginTop="@dimen/common_margin_top"
+                    android:text="0.00"/>
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+            <TextView
+                    style="@style/common_text"
+                    android:text="累计提现（元）"/>
+            <TextView
+                    style="@style/common_text"
+                    android:textSize="22dp"
+                    android:layout_marginTop="@dimen/common_margin_top"
+                    android:text="0.00"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+            android:layout_weight="1">
+
+    </LinearLayout>
+
+    <Button android:id="@+id/wallet_commit"
+            style="@style/CommonButton"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="提现"/>
+
+</LinearLayout>

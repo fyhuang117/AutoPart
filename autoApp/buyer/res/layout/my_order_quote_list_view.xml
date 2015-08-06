@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/frame"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+              android:orientation="vertical"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        <RelativeLayout
+                style="@style/my_relative"
+                android:onClick="my_order_detail"
+                >
+            <ImageView style="@style/image_right"/>
+            <TextView android:id="@+id/order_parts"
+                      style="@style/common_text"
+                      android:text="保险杠"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/line"/>
+
+    <View style="@style/line"
+          android:layout_marginTop="@dimen/common_margin"
+            />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_width"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="2">
+
+        <Button android:id="@+id/inquiry_order_btn"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/CommonTextView_Content"
+                android:background="@drawable/listview_item_bg_selector"
+                android:text="排序"
+                />
+        <View style="@style/line_vertical"
+              android:layout_marginTop="@dimen/common_margin_top"
+              android:layout_marginBottom="@dimen/common_margin_top"/>
+
+        <Button android:id="@+id/inquiry_seller_btn"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/CommonTextView_Content"
+                android:background="@drawable/listview_item_bg_selector"
+                android:layout_weight="1"
+                android:text="筛选"/>
+
+    </LinearLayout>
+    <View style="@style/line"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include layout="@layout/common_data_null"/>
+
+        <include layout="@layout/common_listview"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

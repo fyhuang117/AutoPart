@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:paddingTop="@dimen/common_margin"
+                android:paddingBottom="@dimen/common_margin"
+        >
+    <ImageView android:id="@+id/icon_address"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:visibility="gone"
+               android:src="@drawable/icon_address_big"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_toRightOf="@+id/icon_address"
+                  android:layout_toLeftOf="@+id/right_image"
+                  android:layout_marginLeft="@dimen/common_margin_top"
+                  android:layout_marginRight="@dimen/common_margin">
+
+        <TextView android:id="@+id/being_title"
+                  style="@style/common_text"
+                  android:text="保险杠"
+                  android:layout_centerVertical="true"/>
+
+        <TextView android:id="@+id/being_content"
+                  style="@style/CommonTextView_Content_Grey"
+                  android:singleLine="true"
+                  android:layout_marginTop="@dimen/common_margin"
+                  android:text="宝马3系 2015款 2.0L 320Li 时尚型 "/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:orientation="horizontal">
+
+        <TextView style="@style/common_text"
+                  android:textColor="@color/bg_color"
+                  android:text="竞价》"/>
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/right_image"
+               android:visibility="gone"
+               style="@style/image_right"/>
+
+</RelativeLayout>

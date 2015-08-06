@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/common_padding_middle"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@color/white"
+        >
+    <RelativeLayout style="@style/order_item_relative"
+            >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:orientation="vertical">
+            <TextView android:id="@+id/title"
+                      style="@style/common_text"
+                      android:text=""
+                      android:layout_centerVertical="true"/>
+
+            <TextView android:id="@+id/time"
+                      style="@style/CommonTextView_Content"
+                      android:textColor="@color/grey_text"
+                      android:layout_marginTop="@dimen/common_margin_top"
+                      android:text="2015-05-12"
+                      android:layout_centerVertical="true"/>
+
+
+        </LinearLayout>
+
+
+        <TextView android:id="@+id/money"
+                  style="@style/common_text"
+                  android:textSize="26dp"
+                  android:text="+26"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!--<View style="@style/line"/>-->
+
+
+</LinearLayout>

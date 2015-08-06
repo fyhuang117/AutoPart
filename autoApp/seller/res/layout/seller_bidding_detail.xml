@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_order_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:orientation="vertical">
+                <RelativeLayout android:onClick="company_detail"
+                                android:visibility="gone"
+                                style="@style/inquiry_relative">
+
+                    <TextView style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:textColor="@color/light_grey"
+                              android:text="@string/inquiry_text_quote_company"/>
+
+                    <TextView android:id="@+id/detail_quote_name"
+                              style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:text="@string/inquiry_text_quote"/>
+
+                    <ImageView style="@style/image_right"/>
+
+                </RelativeLayout>
+
+                <View style="@style/line"
+                      android:visibility="gone"
+                      android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+                <RelativeLayout style="@style/inquiry_relative">
+                    <TextView style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:text="@string/inquiry_text_quote"/>
+                    <TextView android:id="@+id/detail_quote_money"
+                              style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true"
+                              android:textColor="@color/money_color"
+                              android:text="￥10000.00元"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_padding_middle"
+                                android:paddingBottom="@dimen/common_padding_middle"
+                                android:paddingLeft="@dimen/common_padding_middle"
+                                android:paddingRight="@dimen/common_padding_small">
+
+                    <TextView
+                            style="@style/common_text"
+                            android:text="配件信息"
+                            android:textColor="@color/light_grey"
+                            android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_title"
+                              style="@style/common_text"
+                              android:layout_alignParentRight="true"
+                              android:text=""
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <View style="@style/line"/>
+
+                <TextView android:id="@+id/inquiry_name"
+                          style="@style/CommonTextView_Content"
+                          android:paddingLeft="@dimen/common_padding_middle"
+                          android:layout_marginTop="@dimen/common_margin"
+                          android:text=""/>
+
+                <include layout="@layout/hor_image_view"/>
+
+                <View style="@style/line"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/seller_other_info"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+                <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="pay">
+                    <TextView style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:text="@string/inquiry_text_pay_style"/>
+                    <TextView android:id="@+id/inquiry_text_pay_style"
+                              style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:text=""/>
+                    <ImageView style="@style/image_right"/>
+                </RelativeLayout>
+
+                <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:onClick="send">
+                    <TextView style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:text="@string/inquiry_text_send_style"/>
+                    <TextView android:id="@+id/inquiry_text_send_style"
+                              style="@style/common_text"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:layout_centerVertical="true"
+                              android:layout_alignParentRight="true"
+                              android:text=""/>
+
+                    <ImageView style="@style/image_right"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding_middle"
+                          android:layout_marginBottom="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+
+                <View style="@style/line"/>
+
+                <RelativeLayout style="@style/inquiry_relative">
+                    <TextView style="@style/common_text"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"
+                              android:text="卖家留言"/>
+                </RelativeLayout>
+
+                <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+                <RelativeLayout style="@style/inquiry_relative">
+                    <ImageView android:id="@+id/video_recorder_play_btn"
+                               style="@style/image_right"
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/video_recorder_play_btn"
+                            />
+                    <TextView android:id="@+id/inquiry_message"
+                            style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:text="我有现货"/>
+                </RelativeLayout>
+                <View style="@style/line"/>
+
+
+            </LinearLayout>
+
+            <Button android:id="@+id/save_btn"
+                    style="@style/CommonButtonMargin"
+                    android:text="保存"
+                    android:layout_margin="@dimen/common_margin"
+                    android:onClick="commit"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout android:id="@+id/detail_online_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_width"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:weightSum="2">
+
+        <Button android:id="@+id/detail_online"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/CommonButton"
+                android:layout_marginRight="1dp"
+                android:onClick="detail_online"
+                android:text="@string/inquiry_text_online"
+                />
+    </LinearLayout>
+
+</LinearLayout>

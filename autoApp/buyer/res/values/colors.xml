@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#f3f4f6</color>
+    <color name="main_bottom_color">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="black">#000</color>
+    <color name="grey">#333333</color>
+    <color name="grey_text">#b6b6b6</color>
+    <color name="light_grey">#888888</color>
+    <color name="alpha_grey">#33888888</color>
+    <color name="red">#ff0000</color>
+    <color name="money_color">#ff0000</color>
+
+    <color name="text_orange">#215f8b</color>
+    <color name="text_orange_click">#368cc9</color>
+
+    <color name="line_color">#e0e0e0</color>
+
+    <color name="bg_color">#215f8b</color>
+    <color name="bg_color_click">#368cc9</color>
+
+    <color name="contact_alpha_bg">#dddddd</color><!-- 联系人字母索引背影 -->
+    <color name="contact_alpha_text">#666666</color><!-- 联系人字母颜色 -->
+    <color name="bg_alpha_color">#368cc9</color>
+
+
+
+    <color name="blue">#318fc5</color>
+
+</resources>

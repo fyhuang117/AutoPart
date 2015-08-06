@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/common_padding_middle"
+              android:descendantFocusability="blocksDescendants"
+              android:id="@+id/inquire_item_view"
+              android:background="@color/white"
+        >
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingTop="@dimen/common_margin"
+                      android:paddingBottom="@dimen/common_margin"
+                      android:orientation="vertical"
+                      android:layout_toLeftOf="@+id/line"
+                      android:paddingRight="@dimen/common_padding_small">
+
+            <TextView android:id="@+id/inquiry_title"
+                      style="@style/common_text"
+                      android:text="保险杠"
+                      android:textColor="@color/text_orange"
+                      android:layout_centerVertical="true"/>
+
+
+            <TextView android:id="@+id/inquiry_time"
+                      style="@style/CommonTextView_Style"
+                      android:layout_below="@+id/inquiry_title"
+                      android:textColor="@color/grey_text"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/inquiry_cancel"
+                  style="@style/CommonTextView_Style"
+                  android:text="@string/inquiry_text_update"
+                  android:background="@drawable/common_radius_bg_selector"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="@dimen/common_margin"
+                  android:paddingRight="@dimen/common_margin"
+                  android:paddingTop="@dimen/common_margin_top"
+                  android:paddingBottom="@dimen/common_margin_top"
+                  android:gravity="center_vertical"
+                  android:textColor="@color/white"
+                  android:layout_marginRight="@dimen/common_margin"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+
+        <View android:id="@+id/line"
+              style="@style/line_vertical"
+              android:layout_centerVertical="true"
+              android:layout_height="20dp"
+              android:layout_marginLeft="@dimen/common_margin_top"
+              android:layout_marginRight="@dimen/common_margin"
+              android:layout_toLeftOf="@+id/inquiry_cancel"/>
+
+
+    </RelativeLayout>
+
+
+    <View style="@style/line"/>
+
+    <TextView android:id="@+id/inquiry_name"
+              style="@style/CommonTextView_Content"
+              android:layout_marginTop="@dimen/common_margin"
+              android:text="宝马3系 2015款 2.0L 320Li 时尚型 "/>
+
+    <include layout="@layout/hor_image_view"/>
+
+    <View style="@style/line"/>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="@dimen/common_margin"
+            >
+
+        <include layout="@layout/myinquirry_item_bottom"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

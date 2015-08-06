@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_order_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding_middle"
+                          android:paddingLeft="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_margin"
+                                android:paddingBottom="@dimen/common_margin"
+                                android:paddingRight="@dimen/common_padding_small">
+
+                    <TextView android:id="@+id/text1"
+                              style="@style/common_text"
+                              android:text="配件信息"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_title"
+                              style="@style/common_text"
+                              android:text="22"
+                              android:layout_toRightOf="@+id/text1"
+                              android:layout_marginLeft="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView android:id="@+id/inquiry_name"
+                          style="@style/CommonTextView_Content"
+                          android:layout_marginTop="@dimen/common_margin"
+                          android:text=""/>
+
+                <include layout="@layout/hor_image_view"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_margin"
+                                android:paddingBottom="@dimen/common_margin"
+                                android:paddingRight="@dimen/common_padding_small">
+                    <TextView android:id="@+id/text2"
+                              style="@style/common_text"
+                              android:text="数量"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_num"
+                              style="@style/CommonTextView_Content"
+                              android:text=""
+                              android:layout_toRightOf="@+id/text2"
+                              android:layout_marginLeft="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_margin"
+                                android:paddingBottom="@dimen/common_margin"
+                                android:paddingRight="@dimen/common_padding_small">
+                    <TextView android:id="@+id/text3"
+                              style="@style/common_text"
+                              android:text="品牌"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_brand"
+                              style="@style/CommonTextView_Content"
+                              android:text=""
+                              android:layout_toRightOf="@+id/text3"
+                              android:layout_marginLeft="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_margin"
+                                android:paddingBottom="@dimen/common_margin"
+                                android:paddingRight="@dimen/common_padding_small">
+                    <TextView android:id="@+id/text4"
+                              style="@style/common_text"
+                              android:text="品质"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_quality"
+                              style="@style/CommonTextView_Content"
+                              android:text=""
+                              android:layout_toRightOf="@+id/text4"
+                              android:layout_marginLeft="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_margin"
+                                android:paddingBottom="@dimen/common_margin"
+                                android:paddingRight="@dimen/common_padding_small">
+                    <TextView android:id="@+id/text5"
+                              style="@style/common_text"
+                              android:text="商圈"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_area"
+                              style="@style/CommonTextView_Content"
+                              android:text=""
+                              android:layout_toRightOf="@+id/text5"
+                              android:layout_marginLeft="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/common_message_view"/>
+
+            <TextView android:id="@+id/inquiry_time"
+                      style="@style/CommonTextView_Style"
+                      android:layout_width="match_parent"
+                      android:gravity="center"
+                      android:layout_marginTop="@dimen/common_padding"
+                      android:textColor="@color/light_grey"
+                      android:layout_centerVertical="true"
+                      android:text="该询价单将在3个小时后失效"/>
+
+            <Button style="@style/CommonButtonMargin"
+                    android:text="@string/quote_text_title"
+                    android:layout_margin="@dimen/common_margin"
+                    android:onClick="commit"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

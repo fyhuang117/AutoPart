@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@android:id/tabhost"
+        >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/common_top_bar"/>
+            <TabWidget
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_top_bar_height"
+                android:id="@android:id/tabs"
+                android:background="@color/background"
+                android:divider="@drawable/custom_tab_indicator_divider"
+                android:dividerPadding="10dp"
+                android:showDividers="middle"
+                android:tabStripEnabled="false"
+                />
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/common_margin"
+                android:id="@android:id/tabcontent"
+                />
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+        >
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_ad_height">
+
+        <com.autoparts.sellers.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/CommonTextView_Time"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:text="热点新闻"/>
+
+            <com.autoparts.sellers.view.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_marginTop="3dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    app:pageColor="@color/white"
+                    app:radius="3dp"
+                    />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:background="@color/bg_color"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:weightSum="2">
+
+        <RelativeLayout android:id="@+id/my_inquiry_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1">
+
+            <TextView android:id="@+id/text1"
+                      style="@style/common_text"
+                      android:textSize="18dp"
+                      android:textColor="@color/white"
+                      android:layout_centerInParent="true"
+                      android:text="@string/my_inquiry_text"/>
+
+            <TextView android:id="@+id/my_bidding_num"
+                      style="@style/CommonTextView_Style"
+                      android:text="1"
+                      android:background="@drawable/custom_oval_red"
+                      android:layout_toRightOf="@+id/text1"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:textColor="@color/white"
+                      android:gravity="center"/>
+        </RelativeLayout>
+
+        <View style="@style/line_vertical"
+              android:layout_marginTop="@dimen/common_margin"
+              android:layout_marginBottom="@dimen/common_margin"
+              android:background="@color/white"
+                />
+
+        <RelativeLayout android:id="@+id/my_order_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1">
+
+            <TextView android:id="@+id/text2"
+                      style="@style/common_text"
+                      android:textSize="18dp"
+                      android:textColor="@color/white"
+                      android:layout_centerInParent="true"
+                      android:text="@string/my_order_text"/>
+
+            <TextView android:id="@+id/my_order_num"
+                      style="@style/CommonTextView_Style"
+                      android:text="12"
+                      android:background="@drawable/custom_oval_red"
+                      android:layout_toRightOf="@+id/text2"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:textColor="@color/white"
+                      android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/search_view"
+                    style="@style/inquiry_sort_relative"
+                    android:padding="6dp"
+                    android:background="@drawable/custom_dialog_bg"
+                    android:layout_marginTop="@dimen/common_margin"
+                    android:layout_marginBottom="@dimen/common_margin"
+            >
+
+        <ImageView android:id="@+id/icon_search"
+                   style="@style/image_right"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_toRightOf="@+id/text"
+                   android:src="@drawable/icon_search"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_alignParentRight="false"/>
+        <TextView android:id="@+id/text"
+                  style="@style/common_text"
+                  android:layout_marginLeft="@dimen/common_margin"
+                  android:layout_width="wrap_content"
+                  android:textColor="@color/grey_text"
+                  android:layout_centerVertical="true"
+                  android:text="询价筛选"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:id="@+id/buyer_order_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swipeRefreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <include layout="@layout/common_listview"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include layout="@layout/common_data_null"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

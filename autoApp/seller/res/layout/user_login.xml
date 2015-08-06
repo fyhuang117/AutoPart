@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/common_top_bar"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="@dimen/common_padding_middle"
+                  android:orientation="vertical">
+
+        <TextView android:text="@string/login_hint_prompt"
+                  android:textColor="@color/grey_text"
+                  android:gravity="center_horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_marginTop="@dimen/common_margin_top"
+                  android:textSize="@dimen/common_style_size"
+                  style="@style/CommonTextView_Content" android:layout_height="wrap_content"/>
+
+        <View style="@style/line"
+              android:layout_marginTop="30dp"
+              android:layout_width="match_parent"/>
+        <RelativeLayout style="@style/login_relative"
+                >
+
+            <ImageView android:id="@+id/image1"
+                       style="@style/login_image"/>
+
+            <EditText android:id="@+id/login_phone"
+                      android:layout_width="match_parent"
+                      android:layout_toRightOf="@+id/image1"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:layout_centerInParent="true"
+                      android:inputType="phone"
+                      android:maxLength="11"
+                      android:hint="@string/login_hint_phone"
+                      style="@style/CommonTextView_Content"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line"/>>
+
+        <RelativeLayout style="@style/login_relative">
+
+            <Button android:id="@+id/login_code_btn"
+                    style="@style/CommonButton"
+                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/login_get_code"
+                    android:textSize="@dimen/common_style_size"
+                    android:background="@drawable/btn_radius_bg_selector"
+                    />
+
+            <ImageView android:id="@+id/image2"
+                       android:src="@drawable/login_password"
+                       style="@style/login_image"/>
+
+
+            <EditText android:id="@+id/login_code_phone"
+                      android:layout_width="match_parent"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/image2"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:layout_toLeftOf="@+id/login_code_btn"
+                      android:hint="@string/login_hint_message"
+                      android:inputType="number"
+                      style="@style/CommonTextView_Content"/>
+
+        </RelativeLayout>
+        <View style="@style/line"/>
+
+
+    </LinearLayout>
+
+
+    <Button android:id="@+id/login_btn"
+            style="@style/CommonButton"
+            android:layout_height="@dimen/common_button_height"
+            android:text="@string/login_commit"
+            android:layout_marginTop="@dimen/common_margin"
+            android:background="@drawable/btn_bg_selector"
+            />
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/common_padding"
+                  android:layout_marginLeft="@dimen/common_padding"
+                  android:orientation="horizontal">
+
+        <TextView android:text="@string/login_agree"
+                  android:textColor="@color/grey_text"
+                  style="@style/CommonTextView_Content"/>
+
+        <TextView android:id="@+id/login_user_deal"
+                  android:text="@string/login_deal"
+                  android:layout_marginLeft="@dimen/common_margin_top"
+                  android:textColor="@color/common_text_color_selector"
+                  style="@style/CommonTextView_Content"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

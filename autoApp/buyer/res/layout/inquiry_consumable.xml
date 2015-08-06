@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/common_padding"
+                      android:orientation="vertical">
+            <View style="@style/line"/>
+
+            <RelativeLayout style="@style/inquiry_relative"
+                            android:onClick="sort">
+                <ImageView style="@style/image_right"/>
+
+                <TextView android:id="@+id/inquiry_sort_text"
+                          style="@style/common_text"
+                          android:textColor="@color/light_grey"
+                          android:layout_centerVertical="true"
+                          android:text="@string/inquiry_text_sort"/>
+
+                <TextView android:id="@+id/inquiry_sort"
+                          style="@style/common_text"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginRight="@dimen/common_padding"
+                          android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <View style="@style/line"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:id="@+id/model_view"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:layout_marginTop="@dimen/common_padding"
+                      android:orientation="vertical">
+            <View style="@style/line"/>
+            <RelativeLayout style="@style/inquiry_relative"
+                            android:onClick="model">
+                <ImageView style="@style/image_right"/>
+                <TextView android:id="@+id/text1"
+                          style="@style/common_text"
+                          android:textColor="@color/light_grey"
+                          android:layout_centerVertical="true"
+                          android:text="@string/inquiry_text_model"/>
+
+                <TextView android:id="@+id/inquiry_model"
+                          style="@style/CommonTextView_Content"
+                          android:layout_alignParentRight="true"
+                          android:gravity="right"
+                          android:singleLine="true"
+                          android:layout_toRightOf="@+id/text1"
+                          android:layout_marginRight="@dimen/common_padding"
+                          android:layout_marginLeft="@dimen/common_margin"
+                          android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+
+            <RelativeLayout style="@style/inquiry_relative"
+                            android:onClick="year">
+                <ImageView style="@style/image_right"/>
+                <TextView
+                        style="@style/common_text"
+                        android:textColor="@color/light_grey"
+                        android:layout_centerVertical="true"
+                        android:text="@string/inquiry_text_year"/>
+
+                <TextView android:id="@+id/inquiry_year"
+                          style="@style/common_text"
+                          android:layout_alignParentRight="true"
+                          android:layout_marginRight="@dimen/common_padding"
+                          android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <View style="@style/line"/>
+
+        </LinearLayout>
+
+
+        <TextView style="@style/CommonTextView_Content_Grey"
+                  android:layout_marginLeft="@dimen/common_padding_middle"
+                  android:layout_marginTop="@dimen/common_margin_top"
+                  android:layout_marginBottom="@dimen/common_margin_top"
+                  android:text="@string/inquiry_text_photo"/>
+        <View style="@style/line"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="120dp"
+                      android:gravity="center_vertical"
+                      android:background="@color/white"
+                      android:paddingLeft="@dimen/common_padding_middle"
+                      android:orientation="vertical">
+
+            <include layout="@layout/hor_image_view"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal"
+                      android:gravity="center"
+                >
+
+            <LinearLayout android:layout_width="120dp"
+                          android:layout_height="40dp"
+                          android:layout_marginRight="60dp"
+                          android:onClick="voice"
+                          android:gravity="center"
+                          android:background="@drawable/btn_bg_radius_selector"
+                          android:orientation="horizontal">
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/inquiry_icon_voice"/>
+
+                <TextView style="@style/CommonTextView_White"
+                          android:text="@string/inquiry_text_voice"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="120dp"
+                          android:layout_height="40dp"
+                          android:gravity="center"
+                          android:onClick="other"
+                          android:background="@drawable/btn_bg_radius_selector"
+                          android:orientation="horizontal">
+
+                <ImageView android:layout_width="25dp"
+                           android:layout_height="25dp"
+                           android:src="@drawable/inquiry_icon_other"/>
+
+                <TextView style="@style/CommonTextView_White"
+                          android:text="@string/my_inquiry_other"
+                        />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button style="@style/CommonButtonMargin"
+            android:text="@string/inquiry_text_commit"
+            android:onClick="commit"/>
+
+</LinearLayout>
+

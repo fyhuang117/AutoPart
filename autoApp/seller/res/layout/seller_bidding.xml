@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+
+                    >
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                    <include layout="@layout/seller_other_info"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:background="@color/white"
+                                  android:layout_marginTop="@dimen/common_padding_middle"
+                                  android:orientation="vertical">
+                        <View style="@style/line"/>
+
+                        <RelativeLayout style="@style/inquiry_relative"
+                                        android:onClick="pay">
+                            <ImageView style="@style/image_right"/>
+                            <TextView
+                                    style="@style/common_text"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_grey"
+                                    android:text="@string/bid_text_pay"/>
+
+                            <TextView android:id="@+id/bid_pay"
+                                      style="@style/CommonTextView_Content"
+                                      android:layout_alignParentRight="true"
+                                      android:layout_marginRight="@dimen/common_padding"
+                                      android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+
+                        <RelativeLayout style="@style/inquiry_relative"
+                                        android:onClick="send">
+                            <ImageView style="@style/image_right"/>
+                            <TextView
+                                    style="@style/common_text"
+                                    android:layout_centerVertical="true"
+                                    android:textColor="@color/light_grey"
+                                    android:text="@string/bid_text_send"/>
+                            <TextView android:id="@+id/bid_send"
+                                      style="@style/CommonTextView_Content"
+                                      android:layout_alignParentRight="true"
+                                      android:layout_marginRight="@dimen/common_padding"
+                                      android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+
+                        <View style="@style/line"/>
+
+                    </LinearLayout>
+
+                    <TextView style="@style/CommonTextView_Content_Grey"
+                              android:layout_marginLeft="@dimen/common_padding_middle"
+                              android:layout_marginTop="@dimen/common_margin_top"
+                              android:layout_marginBottom="@dimen/common_margin_top"
+                              android:text="@string/inquiry_text_photo"/>
+                    <View style="@style/line"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="120dp"
+                                  android:gravity="center_vertical"
+                                  android:background="@color/white"
+                                  android:paddingLeft="@dimen/common_padding_middle"
+                                  android:orientation="vertical">
+
+                        <include layout="@layout/hor_image_view"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:layout_marginTop="@dimen/common_padding_middle"
+                                android:layout_marginBottom="@dimen/common_padding_middle"
+                                android:background="@color/white"
+                                android:onClick="voice">
+                    <ImageView style="@style/image_right"/>
+                    <TextView
+                            style="@style/common_text"
+                            android:layout_centerVertical="true"
+                            android:text="@string/bid_text_voice"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button style="@style/CommonButtonMargin"
+            android:text="@string/bid_text_commit"
+            android:onClick="commit"/>
+
+
+
+</LinearLayout>
+

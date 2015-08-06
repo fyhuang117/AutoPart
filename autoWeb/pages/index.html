@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>易配购后台维护系统</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+
+<body>
+<div class="div_table">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="2" height="70" class="td_back"><h1>易配购后台维护系统</h1></td>
+    </tr>
+    <tr>
+      <td width="265" valign="top" align="left"><ul class="ul_css" id="ulli">
+          <li onclick="changeCss(this)"  class="Selected"><a href="javascript:void(0)">人员</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">广告</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">配件</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">汽车</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">询价单</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">订单</a></li>
+          <li onclick="changeCss(this)"><a href="javascript:void(0)">系统信息</a></li>
+        </ul></td>
+      <td width="100%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="border_0" id="ul_zy">
+          <tr class="bottbord">
+            <td colspan="4"><input class="input_css"  placeholder="输入检索内容..." type="text">
+              <span class="dx-vam">搜索</span></td>
+          </tr>
+          <tr class="bottbords">
+            <td width="14%" align="center">标题</td>
+            <td width="14%" align="center">图片</td>
+            <td  width="48%" align="center">内容</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" onClick="showDiv(this)">添加新广告</a></td>
+          </tr>
+          <tr class="bottbords Selecteds" onclick="changezy(this)">
+            <td width="14%" align="center">广告0</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告1</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告2</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告3</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告4</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告5</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告6</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告7</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告8</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr class="bottbords" onclick="changezy(this)">
+            <td width="14%" align="center">广告9</td>
+            <td width="14%" align="center">1.jpg</td>
+            <td  width="48%" align="center">http://www.sina.com.cn</td>
+            <td width="30%" align="center" class="border_ri_no"><a href="#" class="a_css" onClick="showDiv(this)">编辑</a>&nbsp;&nbsp;<a href="#" class="a_css">删除</a></td>
+          </tr>
+          <tr>
+            <td colspan="4"><span class="span_fy"> 第1页（共20条记录）</span>
+              <label id="ul_fy"><span onclick="changefy(this)" class="fy">1</span><span  onclick="changefy(this)">2</span></label></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td align="left" height="50"><span class="span_fon">Copyright © 2004-2015 易配购 All rights reserved.</span></td>
+    </tr>
+  </table>
+</div>
+<!-- 弹出层div-->
+<div id="popDiv" class="mydiv" style="display:none;"> <span class="cesspan">编辑广告</span> <a href="javascript:closeDiv()" class="aclass">X</a>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tabls">
+  <tr>
+    <td align="left" width="40">标题</td>
+    <td><input type="text" class="ing"></td>
+  </tr>
+  <tr>
+    <td align="left">图片</td>
+    <td><input type="text" class="ing"></td>
+  </tr>
+  <tr>
+    <td align="left">内容</td>
+    <td><input type="text" class="ing"></td>
+  </tr>
+  <tr>
+   
+    <td colspan="2" height="40" align="right"><a href="javascript:void(0)" class="a_button">更新</a><a href="javascript:closeDiv()" class="a_button">取消</a></td>
+  </tr>
+</table>
+
+
+</div>
+<div id="bg" class="bg" style="display:none;"></div>
+</body>
+</html>

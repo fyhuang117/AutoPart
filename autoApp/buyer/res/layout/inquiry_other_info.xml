@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/other_info"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+                  android:orientation="vertical">
+        <RelativeLayout style="@style/inquiry_relative">
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/inquiry_text_category"/>
+            <TextView android:id="@+id/brand"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:text="@string/inquiry_brand_nul"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+        <RelativeLayout style="@style/inquiry_relative">
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/inquiry_text_quality"/>
+
+            <TextView android:id="@+id/quality"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+        <RelativeLayout android:id="@+id/inquiry_view5"
+                        style="@style/inquiry_relative"
+                        android:gravity="left">
+
+            <TextView style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/light_grey"
+                      android:text="@string/inquiry_text_num"/>
+
+
+            <TextView android:id="@+id/num"
+                      style="@style/common_text"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:text=""/>
+
+        </RelativeLayout>
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+        <RelativeLayout style="@style/inquiry_relative">
+
+            <TextView android:id="@+id/location_text"
+                      style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/light_grey"
+                      android:text="我的商圈"/>
+
+            <TextView android:id="@+id/location"
+                      style="@style/common_text"
+                      android:layout_toLeftOf="@+id/right_image"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentRight="true"
+                      android:text=""/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout android:id="@+id/xianhuo_view"
+                      android:orientation="vertical"
+                      android:visibility="gone"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+            <View style="@style/line" android:layout_marginLeft="@dimen/common_padding_middle"/>
+
+            <RelativeLayout style="@style/inquiry_relative">
+
+                <TextView style="@style/common_text"
+                          android:layout_centerVertical="true"
+                          android:textColor="@color/light_grey"
+                          android:text="现货"/>
+
+                <TextView android:id="@+id/xianhuo"
+                          style="@style/common_text"
+                          android:layout_toLeftOf="@+id/right_image"
+                          android:layout_centerVertical="true"
+                          android:layout_alignParentRight="true"
+                          android:text=""/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

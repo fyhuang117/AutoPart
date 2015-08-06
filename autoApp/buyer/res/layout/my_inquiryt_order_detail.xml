@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_order_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding_middle"
+                          android:paddingLeft="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/common_padding_middle"
+                                android:paddingBottom="@dimen/common_padding_middle"
+                                android:paddingRight="@dimen/common_padding_small">
+
+                    <TextView
+                            style="@style/common_text"
+                            android:text="配件信息"
+                            android:textColor="@color/light_grey"
+                            android:layout_centerVertical="true"/>
+
+                    <TextView android:id="@+id/inquiry_title"
+                              style="@style/common_text"
+                              android:text="保险杠"
+                              android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <View style="@style/line"/>
+
+                <TextView android:id="@+id/inquiry_name"
+                          style="@style/CommonTextView_Content"
+                          android:layout_marginTop="@dimen/common_margin"
+                          android:text="宝马3系 2005款 1.6L 316i 运动设计套装"/>
+
+                <include layout="@layout/hor_image_view"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/inquiry_other_info"/>
+
+
+            <include layout="@layout/common_message_view"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

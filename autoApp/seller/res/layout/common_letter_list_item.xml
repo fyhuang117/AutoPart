@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 列表显示 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/contact_alpha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_padding_middle"
+            android:text="A"
+            android:background="@color/background"
+            android:textColor="@color/black"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:visibility="gone"/>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:paddingTop="@dimen/common_padding_middle"
+                  android:paddingBottom="@dimen/common_padding_middle"
+                  android:gravity="center_vertical"
+                  android:background="@drawable/listview_letter_bg_selector">
+        <ImageView android:id="@+id/contact_image"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:layout_marginLeft="@dimen/common_padding_middle"
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/model_default_icon"/>
+
+        <TextView android:id="@+id/contact_name"
+                  style="@style/CommonTextView_Content"
+                  android:layout_marginLeft="@dimen/common_padding_middle"
+                  android:text="111"/>
+
+    </LinearLayout>
+
+</LinearLayout>

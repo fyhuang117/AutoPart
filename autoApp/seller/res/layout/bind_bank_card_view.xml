@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="@dimen/common_padding"
+                  android:layout_marginBottom="@dimen/common_padding"
+                  android:background="@color/white">
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="bank">
+            <ImageView style="@style/image_right"/>
+
+            <TextView style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="银行"/>
+
+            <TextView android:id="@+id/bank_card_select"
+                      style="@style/CommonTextView_Content"
+                      android:textColor="@color/grey_text"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="@dimen/common_padding_middle"
+                      android:hint="请选择"/>
+        </RelativeLayout>
+
+        <View style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding_middle"/>
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="local">
+            <ImageView style="@style/image_right"/>
+
+            <TextView style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="开户行所在地"/>
+
+            <TextView android:id="@+id/bank_select_city"
+                      style="@style/CommonTextView_Content"
+                      android:textColor="@color/grey_text"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="@dimen/common_padding_middle"
+                      android:hint="请选择"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding_middle"/>
+        <RelativeLayout style="@style/inquiry_relative">
+
+            <TextView android:id="@+id/bank_id_text"
+                      style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="储蓄卡号"/>
+
+            <EditText android:id="@+id/bank_card_account"
+                      style="@style/common_editText"
+                      android:textColor="@color/grey_text"
+                      android:layout_toRightOf="@+id/bank_id_text"
+                      android:gravity="right|center_vertical"
+                      android:inputType="number"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:hint="请输入储蓄卡号"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding_middle"/>
+        <RelativeLayout style="@style/inquiry_relative">
+
+            <TextView android:id="@+id/bank_name_text"
+                      style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="开户人姓名"/>
+
+            <EditText android:id="@+id/bank_card_username"
+                      style="@style/common_editText"
+                      android:textColor="@color/grey_text"
+                      android:layout_toRightOf="@+id/bank_name_text"
+                      android:gravity="right|center_vertical"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:hint="开户人姓名"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding_middle"/>
+        <RelativeLayout style="@style/inquiry_relative">
+
+            <TextView android:id="@+id/bank_money_text"
+                      style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="提现金额"/>
+
+            <EditText android:id="@+id/bank_money"
+                      style="@style/common_editText"
+                      android:textColor="@color/grey_text"
+                      android:layout_toRightOf="@+id/bank_money_text"
+                      android:gravity="right|center_vertical"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:inputType="numberDecimal"
+                      android:hint="可提现金额10元"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+            style="@style/CommonButtonMargin"
+            android:text="@string/confirm_ok"
+            android:onClick="commit"
+            />
+
+</LinearLayout>

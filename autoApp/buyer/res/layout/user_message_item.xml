@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/common_padding_middle"
+              android:paddingBottom="@dimen/common_padding_middle"
+              android:background="@color/white"
+        >
+
+    <TextView android:id="@+id/message_title"
+              style="@style/common_text"
+              android:text="保险杠"
+              android:paddingTop="@dimen/common_padding_middle"
+              android:textColor="@color/text_orange"
+              android:layout_centerVertical="true"/>
+
+    <TextView android:id="@+id/message_content"
+              style="@style/CommonTextView_Content"
+              android:layout_marginTop="@dimen/common_margin_top"
+              android:text="请尽快发货"/>
+
+    <TextView android:id="@+id/message_time"
+              style="@style/CommonTextView_Time"
+              android:layout_marginTop="@dimen/common_margin_top"
+              android:text="2015-04-22"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/common_padding_middle">
+
+        <TextView android:id="@+id/message_state"
+                  style="@style/CommonTextView_Content"
+                  android:text="未读"
+                  android:textColor="@color/text_orange"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/common_padding_middle">
+    <LinearLayout android:id="@+id/model_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+        <RelativeLayout android:id="@+id/bid_money_view"
+                        style="@style/inquiry_relative">
+
+            <TextView android:id="@+id/text1" style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:text="@string/quote_text_title"/>
+
+            <EditText android:id="@+id/bid_money"
+                      style="@style/common_editText"
+                      android:layout_toRightOf="@+id/text1"
+                      android:hint="请输入报价金额"
+                      android:layout_toLeftOf="@+id/text2"
+                      android:inputType="numberDecimal"
+                      android:layout_marginLeft="@dimen/common_padding_middle"
+                      android:layout_marginRight="@dimen/common_padding_middle"
+                      android:layout_centerVertical="true"/>
+
+            <TextView android:id="@+id/text2"
+                      style="@style/common_text"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"
+                      android:text="元"/>
+        </RelativeLayout>
+
+        <View android:id="@+id/bid_money_line"
+              style="@style/line"
+              android:layout_marginLeft="@dimen/common_padding"/>
+
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="brand">
+            <ImageView android:id="@+id/brand_image"
+                       style="@style/image_right"
+                    />
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/bid_text_brand"/>
+            <TextView android:id="@+id/bid_brand"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/common_padding"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="quality">
+            <ImageView android:id="@+id/qua_image"
+                       style="@style/image_right"/>
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/bid_text_quality"/>
+            <TextView android:id="@+id/bid_quality"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/common_padding"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="zhibao">
+            <ImageView style="@style/image_right"/>
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/bid_text_zhibao"/>
+            <TextView android:id="@+id/bid_zhibao"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/common_padding"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+        <RelativeLayout style="@style/inquiry_relative"
+                        android:onClick="xianhuo">
+            <ImageView style="@style/image_right"/>
+            <TextView
+                    style="@style/common_text"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/light_grey"
+                    android:text="@string/bid_text_xianhuo"/>
+            <TextView android:id="@+id/bid_xianhuo"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/common_padding"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+
+        <RelativeLayout android:id="@+id/inquiry_view5"
+                        style="@style/inquiry_relative"
+                        android:gravity="left">
+
+            <TextView android:id="@+id/bid_num"
+                      style="@style/CommonTextView_Content"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="@dimen/common_padding"
+                      android:layout_centerVertical="true"/>
+
+            <TextView style="@style/common_text"
+                      android:layout_centerVertical="true"
+                      android:textColor="@color/light_grey"
+                      android:text="@string/inquiry_text_num"/>
+
+            <TextView android:id="@+id/inquiry_add"
+                      style="@style/common_text"
+                      android:layout_alignParentRight="true"
+                      android:background="@drawable/common_input_bg"
+                      android:gravity="center"
+                      android:layout_centerVertical="true"
+                      android:layout_height="35dp"
+                      android:layout_width="35dp"
+                      android:textColor="@color/text_orange"
+                      android:text="+"/>
+            <EditText android:id="@+id/inquiry_num"
+                      style="@style/CommonTextView_Content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:layout_toLeftOf="@+id/inquiry_add"
+                      android:background="@drawable/common_input_bg"
+                      android:gravity="center"
+                      android:inputType="number"
+                      android:layout_centerVertical="true"
+                      android:layout_height="35dp"
+                      android:layout_width="45dp"
+                      android:text="1"/>
+            <TextView android:id="@+id/inquiry_minus"
+                      style="@style/common_text"
+                      android:layout_toLeftOf="@+id/inquiry_num"
+                      android:background="@drawable/common_input_bg"
+                      android:gravity="center"
+                      android:textColor="@color/text_orange"
+                      android:layout_centerVertical="true"
+                      android:layout_height="35dp"
+                      android:layout_width="35dp"
+                      android:text="-"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+    <include layout="@layout/common_top_bar"/>
+    <RelativeLayout android:id="@+id/tab"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+        <RelativeLayout android:id="@+id/mListView_parent_view"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+            <ListView
+                    android:id="@+id/mListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/divider_line"
+                    android:dividerHeight="0.5dp"
+                    android:scrollbars="none"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@drawable/listview_item_bg_selector"/>
+
+            <com.autoparts.sellers.view.MyLetterListView
+                    android:id="@+id/MyLetterListView01"
+                    android:layout_width="@dimen/common_letter_width"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

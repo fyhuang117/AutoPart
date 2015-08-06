@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_order_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+                  android:paddingLeft="@dimen/common_padding"
+                  android:paddingRight="@dimen/common_padding"
+                  android:orientation="vertical"
+                  android:background="@color/white">
+        <include layout="@layout/user_evaluate_rating"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/inquiry_btn_view"
+                  android:layout_width="match_parent"
+                  android:visibility="visible"
+                  android:orientation="horizontal"
+                  android:gravity="right"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:padding="@dimen/common_padding_middle"
+                  android:weightSum="3"
+            >
+
+        <TextView android:id="@+id/evaluate_select1"
+                style="@style/OrderButton"
+                android:textColor="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="好评"
+                android:layout_weight="1"
+                />
+        <TextView android:id="@+id/evaluate_select2"
+                style="@style/OrderButton"
+                android:textColor="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="中评"
+                android:layout_weight="1"/>
+
+        <TextView android:id="@+id/evaluate_select3"
+                style="@style/OrderButton"
+                android:textColor="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="差评"
+                android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <View style="@style/line"/>
+
+    <EditText android:id="@+id/comment_text"
+              android:layout_width="match_parent"
+              style="@style/common_text"
+              android:lines="5"
+              android:hint="请输入评价内容"
+              android:gravity="top"
+              android:background="@color/white"
+              android:padding="@dimen/common_padding"/>
+    <View style="@style/line"/>
+
+
+    <Button
+            style="@style/CommonButton"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding"
+            android:onClick="commit"
+            android:background="@drawable/btn_bg_radius_selector"
+            android:text="@string/order_text_evaluate"/>
+
+
+</LinearLayout>

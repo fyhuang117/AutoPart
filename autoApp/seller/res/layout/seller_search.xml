@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <LinearLayout android:id="@+id/model_view"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding"
+                          android:orientation="vertical">
+                <View style="@style/line"/>
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:onClick="model">
+                    <ImageView style="@style/image_right"/>
+                    <TextView style="@style/common_text"
+                              android:layout_centerVertical="true"
+                              android:textColor="@color/light_grey"
+                              android:text="@string/inquiry_text_model"/>
+
+                    <TextView android:id="@+id/inquiry_model"
+                              style="@style/CommonTextView_Content"
+                              android:text="@string/search_all"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <View style="@style/line" android:layout_marginLeft="@dimen/common_padding"/>
+
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:onClick="year">
+                    <ImageView style="@style/image_right"/>
+                    <TextView
+                            style="@style/common_text"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/light_grey"
+                            android:text="@string/inquiry_text_year"/>
+                    <TextView android:id="@+id/inquiry_year"
+                              style="@style/CommonTextView_Content"
+                              android:text="@string/search_all"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+                <View style="@style/line"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@color/white"
+                          android:layout_marginTop="@dimen/common_padding"
+                          android:orientation="vertical">
+                <View style="@style/line"/>
+
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:onClick="sort">
+                    <ImageView style="@style/image_right"/>
+                    <TextView
+                            style="@style/common_text"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/light_grey"
+                            android:text="@string/inquiry_text_sort"/>
+
+                    <TextView android:id="@+id/inquiry_sort"
+                              style="@style/CommonTextView_Content"
+                              android:text="@string/search_all"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+                <View style="@style/line"
+                      android:layout_marginLeft="@dimen/common_padding"/>
+
+
+                <RelativeLayout style="@style/inquiry_relative"
+                                android:onClick="category">
+                    <ImageView style="@style/image_right"/>
+                    <TextView
+                              style="@style/common_text"
+                              android:textColor="@color/light_grey"
+                              android:layout_centerVertical="true"
+                              android:text="@string/inquiry_text_category"/>
+
+                    <TextView android:id="@+id/brand"
+                              style="@style/CommonTextView_Content"
+                              android:text="@string/search_all"
+                              android:layout_alignParentRight="true"
+                              android:layout_marginRight="@dimen/common_padding"
+                              android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button style="@style/CommonButton"
+                android:text="清除选项"
+                android:layout_marginTop="@dimen/common_padding"
+                android:onClick="commit"/>
+    </LinearLayout>
+</LinearLayout>
+

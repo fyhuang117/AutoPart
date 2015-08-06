@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/voice_record_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="gone"
+            >
+
+        <RelativeLayout android:id="@+id/voice_anim"
+                        android:layout_width="fill_parent"
+                        android:layout_height="220dp">
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/voice_ugc_icon_recording"/>
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/voice_ugc_icon_recordingring"
+                    android:gravity="bottom">
+
+                <ImageView
+                        android:id="@+id/voice_recording_volume"
+                        android:layout_width="30dip"
+                        android:layout_height="0dip"
+                        android:background="@drawable/voice_ugc_icon_recordingvolume"/>
+            </RelativeLayout>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/voice_ugc_icon_recordingring"/>
+
+            <RelativeLayout
+                    android:id="@+id/voice_recordinglight_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp">
+
+                <ImageView
+                        android:id="@+id/voice_recordinglight_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voice_ugc_icon_recordinglight"
+                        android:visibility="visible"/>
+
+                <ImageView
+                        android:id="@+id/voice_recordinglight_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voice_ugc_icon_recordinglight"
+                        android:visibility="visible"/>
+
+                <ImageView
+                        android:id="@+id/voice_recordinglight_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="160dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/voice_ugc_icon_recordinglight"
+                        android:visibility="visible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/globle_player_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@+id/voice_anim"
+                >
+
+            <TextView
+                    android:id="@+id/voice_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="0&apos;&apos;"
+                    android:textColor="#999999"/>
+
+            <TextView android:id="@+id/voice_record_total"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentTop="true"
+                      android:text="30″"
+                      android:textColor="#999999"/>
+
+            <ProgressBar
+                    android:id="@+id/voice_record_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dip"
+                    android:layout_margin="8dip"
+                    android:layout_toLeftOf="@+id/voice_record_total"
+                    android:layout_toRightOf="@+id/voice_record_time"
+                    android:layout_weight="1"
+                    android:max="30"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/player_progress_bar_bg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

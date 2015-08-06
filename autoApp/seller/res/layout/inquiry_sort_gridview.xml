@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+    <include layout="@layout/common_top_bar"/>
+
+    <RelativeLayout style="@style/inquiry_sort_relative"
+                    android:background="@color/white"
+            android:visibility="gone">
+        <ImageView android:id="@+id/icon_search"
+                   style="@style/image_right"
+                   android:src="@drawable/icon_search"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_alignParentRight="false"/>
+        <EditText style="@style/common_text"
+                  android:layout_width="match_parent"
+                  android:layout_toRightOf="@+id/icon_search"
+                  android:paddingLeft="@dimen/common_padding"
+                  android:paddingRight="@dimen/common_padding"
+                  android:hint="@string/inquiry_text_accessory"/>
+
+    </RelativeLayout>
+    <View style="@style/line"/>
+    <View style="@style/line"
+          android:layout_marginTop="@dimen/common_padding"/>
+    <com.autoparts.sellers.view.LineGrildView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:numColumns="3"
+            android:fastScrollEnabled="true"
+            android:gravity="center"
+            android:id="@+id/gridView"
+            android:stretchMode="columnWidth"
+            android:listSelector="#0000"
+            />
+    <View style="@style/line"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/common_padding_middle"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@color/white"
+        >
+    <RelativeLayout style="@style/order_item_relative"
+            >
+
+        <TextView android:id="@+id/inquiry_title"
+                  style="@style/common_text"
+                  android:text="保险杠"
+                  android:textColor="@color/text_orange"
+                  android:layout_centerVertical="true"/>
+
+
+        <TextView android:id="@+id/inquiry_no"
+                  style="@style/CommonTextView_Style"
+                  android:text="@string/order_text_no"
+                  android:textColor="@color/grey_text"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View style="@style/line"/>
+
+    <TextView android:id="@+id/inquiry_name"
+              style="@style/CommonTextView_Content"
+              android:layout_marginTop="@dimen/common_margin"
+              android:text="宝马3系 2015款 2.0L 320Li 时尚型 "/>
+
+    <include layout="@layout/hor_image_view"/>
+
+    <View style="@style/line"/>
+
+
+    <RelativeLayout style="@style/order_item_relative">
+
+        <TextView android:id="@+id/order_real_pay"
+                  style="@style/CommonTextView_Content"
+                  android:text="@string/order_text_real_pay"
+                  android:visibility="gone"
+                  android:textColor="@color/money_color"
+                  android:layout_centerVertical="true"/>
+
+        <include layout="@layout/myinquirry_item_bottom"/>
+
+    </RelativeLayout>
+    <View style="@style/line"/>
+
+
+
+
+</LinearLayout>

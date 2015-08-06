@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/frame"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+        <include layout="@layout/my_inquiryt_order_view"/>
+
+        <include layout="@layout/my_inquiryt_seller_view"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_width"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:weightSum="2">
+
+        <Button android:id="@+id/inquiry_order_btn"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/CommonButton"
+                android:background="@color/grey_text"
+                android:text="@string/inquiry_text_order"
+                />
+        <Button android:id="@+id/inquiry_seller_btn"
+                style="@style/CommonButton"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/inquiry_text_seller"/>
+
+    </LinearLayout>
+
+</LinearLayout>

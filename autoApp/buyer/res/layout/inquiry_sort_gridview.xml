@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+    <include layout="@layout/common_top_bar"/>
+
+    <RelativeLayout style="@style/inquiry_sort_relative"
+                    android:background="@color/white"
+                    android:visibility="gone">
+        <ImageView android:id="@+id/icon_search"
+                   style="@style/image_right"
+                   android:src="@drawable/icon_search"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_alignParentRight="false"/>
+        <EditText style="@style/common_text"
+                  android:layout_width="match_parent"
+                  android:layout_toRightOf="@+id/icon_search"
+                  android:paddingLeft="@dimen/common_padding"
+                  android:paddingRight="@dimen/common_padding"
+                  android:hint="@string/inquiry_text_accessory"/>
+
+    </RelativeLayout>
+    <!--<View style="@style/line"-->
+    <!--android:layout_marginTop="@dimen/common_padding"/>-->
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <include layout="@layout/common_data_null"/>
+
+        <RelativeLayout android:id="@+id/sort_view"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_padding"
+                        android:background="@color/line_color"
+                        android:paddingTop="0.5dp"
+                        android:paddingBottom="0.5dp">
+
+            <com.autoparts.buyers.view.LineGrildView
+                    android:id="@+id/gridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="3"
+                    android:fastScrollEnabled="true"
+                    android:gravity="center"
+                    android:stretchMode="columnWidth"
+                    android:listSelector="#0000"
+                    />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<View style="@style/line"/>-->
+</LinearLayout>

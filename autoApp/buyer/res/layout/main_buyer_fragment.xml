@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/background"
+        >
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_ad_height">
+
+        <com.autoparts.buyers.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/viewPager"
+                android:background="#eeeeee"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/CommonTextView_Time"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:text="热点新闻"/>
+
+            <com.autoparts.buyers.view.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_marginTop="3dip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    app:pageColor="@color/white"
+                    app:radius="3dp"
+                    />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+                  android:orientation="vertical">
+        <View style="@style/line"/>
+        <RelativeLayout android:id="@+id/my_view1"
+                        style="@style/my_relative"
+                >
+            <ImageView style="@style/main_item_image"
+                       android:id="@+id/inqiure_icon1"
+                       android:src="@drawable/inquiry_icon1"
+                    />
+
+            <ImageView style="@style/image_right"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/inqiure_icon1"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+
+                <TextView android:id="@+id/text1"
+                          style="@style/CommonTextView_Selector"
+                          android:textSize="18dp"
+                          android:textColor="@color/black"
+                          android:text="@string/my_inquiry_accessory"/>
+
+                <TextView android:id="@+id/text2"
+                          android:layout_toRightOf="@+id/inqiure_icon1"
+                          style="@style/CommonTextView_Content_Grey"
+                          android:layout_marginTop="@dimen/common_margin_top"
+                          android:text="@string/my_inquiry_accessory_d"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <View style="@style/line" android:background="@color/text_orange"/>
+        <RelativeLayout android:id="@+id/my_view2"
+                        style="@style/my_relative">
+            <ImageView style="@style/main_item_image"
+                       android:id="@+id/inqiure_icon2"
+                       android:src="@drawable/inquiry_icon2"
+                    />
+
+            <ImageView style="@style/image_right"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/inqiure_icon2"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+                <TextView android:id="@+id/text3"
+                          android:textSize="18dp"
+                          android:textColor="@color/black"
+                          style="@style/CommonTextView_Selector"
+                          android:text="@string/my_inquiry_wearing"/>
+
+                <TextView android:id="@+id/text4"
+                          style="@style/CommonTextView_Content_Grey"
+                          android:layout_below="@+id/text3"
+                          android:layout_marginTop="@dimen/common_margin_top"
+                          android:text="@string/my_inquiry_wearing_d"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View style="@style/line" android:background="@color/text_orange"/>
+        <RelativeLayout android:id="@+id/my_view3"
+                        style="@style/my_relative">
+            <ImageView style="@style/main_item_image"
+                       android:id="@+id/inqiure_icon3"
+                       android:src="@drawable/inquiry_icon3"
+                    />
+
+            <ImageView style="@style/image_right"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_toRightOf="@+id/inqiure_icon3"
+                          android:layout_centerVertical="true"
+                          android:layout_marginLeft="@dimen/common_padding_middle"
+                          android:orientation="vertical">
+                <TextView android:id="@+id/text5"
+                          android:textSize="18dp"
+                          android:textColor="@color/black"
+                          style="@style/CommonTextView_Selector"
+                          android:text="@string/my_inquiry_consumable"/>
+
+                <TextView android:id="@+id/text6"
+                          style="@style/CommonTextView_Content_Grey"
+                          android:layout_below="@+id/text5"
+                          android:layout_marginTop="@dimen/common_margin_top"
+                          android:text="@string/my_inquiry_consumable_d"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <View style="@style/line"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/buyer_order_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+                  android:orientation="vertical">
+
+        <View style="@style/line"/>
+        <RelativeLayout android:id="@+id/my_order"
+                        style="@style/my_relative"
+                >
+            <ImageView style="@style/image_right"/>
+
+            <ImageView style="@style/main_item_image"
+                       android:id="@+id/inqiure_icon4"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:src="@drawable/icon_order"
+                    />
+
+            <TextView android:id="@+id/text7"
+                      style="@style/CommonTextView_Selector"
+                      android:layout_toRightOf="@+id/inqiure_icon4"
+                      android:textSize="18dp"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:layout_centerVertical="true"
+                      android:text="@string/my_order_text"/>
+
+        </RelativeLayout>
+        <View style="@style/line"/>
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <include layout="@layout/common_listview"/>
+
+            <LinearLayout android:id="@+id/buyer_now_null"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center">
+                <ImageView style="@style/image_right"
+                           android:layout_width="35dp"
+                           android:layout_height="35dp"
+                           android:src="@drawable/icon_order"/>
+                <TextView style="@style/CommonTextView_Selector"
+                          android:text="@string/my_order_null"
+                          android:layout_marginTop="@dimen/common_margin"
+                          android:textColor="@color/text_orange"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

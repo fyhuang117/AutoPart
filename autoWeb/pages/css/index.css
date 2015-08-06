@@ -1,0 +1,190 @@
+﻿* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 寰蒋闆呴粦;
+}
+body {
+	font-size: 14px;
+	font-family: 'Comic Sans MS';
+}
+ul li {
+	list-style: none;
+}
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+.div_table table tr td {
+	border-collapse: collapse;
+}
+h1 {
+	color: #f47920;
+	font-size: 24px;
+	text-indent: 15px;
+	font-weight: 400;
+	margin-top: 5px;
+}
+.td_back {
+	background-color: #d0d0d0;
+	height: 70px;
+	line-height: 70px;
+}
+.ul_css {
+	width: 250px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 5px;
+	color: #000;
+}
+.ul_css li {
+	height: 25px;
+	line-height: 25px;
+}
+.ul_css a {
+	color: #333333;
+	text-decoration: none;
+}
+.ul_css .Selected {
+	background: #ff8800;
+	text-align: center;
+}
+.ul_css li:hover {
+	background: #ff8800;
+	text-align: center;
+	color: #fff;
+}
+.ul_css li:hover a {
+	color: #fff;
+}
+.ul_css .Selected a {
+	color: #fff;
+	text-decoration: none;
+}
+#ul_zy .Selecteds {
+	background: #ff8800;
+}
+#ul_zy .Selecteds td {
+	color: #fff;
+}
+#ul_zy .Selecteds td a {
+	color: #fff;
+}
+.border_0 {
+	margin: 10px 10px 0;
+	width: 98.5%;
+	border: 1px solid #c0c0c0;
+}
+.input_css {
+	color: #818181;
+	width: 400px;
+	height: 20px;
+	border: 1px solid #c0c0c0;
+	margin: 5px;
+	line-height: 20px;
+	text-indent: 10px;
+}
+.dx-vam {
+	line-height: 100%;
+	border: 1px solid #c0c0c0;
+	position: relative;
+	bottom: 1px;
+	font-size: 0.9em;
+	padding: 1px 7px;
+	text-decoration: inherit;
+}
+.bottbord td {
+	border-bottom: 1px solid #c0c0c0;
+}
+.bottbords td {
+	border-bottom: 1px solid #c0c0c0;
+	height: 25px;
+	border-right: 1px solid #c0c0c0;
+}
+.bottbords .border_ri_no {
+	border-right: 0px;
+}
+.bottbords .border_ri_no a {
+	border-right: 0px;
+	color: #ffa200;
+}
+.span_fy {
+	padding: 10px 30px;
+	display: inline-block;
+}
+#ul_fy span {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+}
+.fy {
+	width: 30px;
+	color: #fff;
+	background: #ffa200;
+}
+.span_fon {
+	position: absolute;
+	bottom: 15px;
+	margin-left: 20px;
+}
+.mydiv {
+    background-color: #fff;
+    left: 50%;
+    margin-left: -150px !important;
+    margin-top: -60px !important;
+    position: absolute;
+    top: 25%;
+    z-index: 99;
+}
+.bg {
+	background-color: #ccc;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;/*FF IE7*/
+	filter: alpha(opacity=50);/*IE*/
+	opacity: 0.5;/*FF*/
+	z-index: 1;
+	position: fixed!important;/*FF IE7*/
+	position: absolute;/*IE6*/
+ _top:       expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop + (document.documentElement.clientHeight-this.offsetHeight)/2 :/*IE6*/
+ document.body.scrollTop + (document.body.clientHeight - this.clientHeight)/2);/*IE5 IE5.5*/
+}
+.cesspan {
+	color: #ffa200;
+	float: left;
+	font-size: 18px;
+	margin: 10px 0 0 15px;
+}
+.aclass {
+	color: #ccc;
+	float: right;
+	font-size: 18px;
+	margin: 10px 15px 0 0;
+	text-decoration: none;
+}
+.ing {
+	border: 1px solid #ccc;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 5px;
+	width: 100%;
+}
+.tabls {
+    display: inline-block;
+    line-height: 32px;
+    padding: 10px 20px 0;
+}
+.a_button{ padding:2px 7px; border:1px solid #ccc; color:#000; text-decoration:none; margin-left:5px;}
+.div_cent{ text-align:center; width:100%;margin: 30px auto;}
+#__01{ margin:0 auto;}
+
+.select_css {
+    width: 100%;
+}
+
+.div_table {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+}

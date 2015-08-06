@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/top_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_top_bar_height"
+                    android:background="@color/main_bottom_color">
+
+        <LinearLayout android:id="@+id/topBar_left_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:background="@drawable/listview_item_bg_selector"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical">
+            <RelativeLayout android:id="@+id/topBar_left_image_parent"
+                            android:layout_width="@dimen/common_top_bar_height"
+                            android:layout_height="@dimen/common_top_bar_height">
+
+                <ImageView android:id="@+id/topBar_left_image"
+                           android:layout_width="26dp"
+                           android:layout_height="26dp"
+                           android:src="@drawable/icon_back"
+                           android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/topBar_left_text"
+                      style="@style/CommonTextView_Selector"
+                      android:textSize="@dimen/common_content_size"
+                      android:textColor="@color/white"
+                      android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/topBar_title"
+                  style="@style/CommonTextView_White"
+                  android:textSize="@dimen/common_title_text"
+                  android:layout_centerInParent="true"
+                  android:singleLine="true"
+                  android:ellipsize="marquee"
+                  android:focusable="true"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:marqueeRepeatLimit="marquee_forever"
+                  android:focusableInTouchMode="true"
+                  android:scrollHorizontally="true"
+                  android:text="@string/app_name"/>
+
+        <LinearLayout android:id="@+id/topBar_right_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="fill_parent"
+                      android:background="@drawable/listview_item_bg_selector"
+                      android:orientation="horizontal"
+                      android:layout_alignParentRight="true"
+                      android:gravity="center_vertical">
+
+            <RelativeLayout android:id="@+id/topBar_right_image_parent"
+                            android:layout_width="@dimen/common_top_bar_height"
+                            android:layout_height="@dimen/common_top_bar_height"
+                            android:visibility="gone">
+                <ImageView android:id="@+id/topBar_right_image"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp"
+                           android:src="@drawable/icon_search"
+                           android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView android:id="@+id/topBar_right_text"
+                      style="@style/common_text"
+                      android:textColor="@color/white"
+                      android:text=""/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:paddingTop="@dimen/common_margin"
+                  android:paddingBottom="@dimen/common_margin"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView style="@style/common_text"
+                  android:layout_width="120dp"
+                  android:text="@string/order_evaluate_text1"
+                />
+
+        <RatingBar android:id="@+id/ratingbar1"
+                   style="@style/customRatingBarBig"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_toRightOf="@+id/find_item_view"
+                />
+
+    </LinearLayout>
+    <View style="@style/line"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:paddingTop="@dimen/common_margin"
+                  android:paddingBottom="@dimen/common_margin"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView style="@style/common_text"
+                  android:layout_width="120dp"
+                  android:text="@string/order_evaluate_text2"
+                />
+
+        <RatingBar android:id="@+id/ratingbar2"
+                   style="@style/customRatingBarBig"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_toRightOf="@+id/find_item_view"
+                />
+
+    </LinearLayout>
+    <View style="@style/line"/>
+    <LinearLayout android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:paddingTop="@dimen/common_margin"
+                  android:paddingBottom="@dimen/common_margin"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView style="@style/common_text"
+                  android:layout_width="120dp"
+                  android:text="@string/order_evaluate_text3"
+                />
+
+        <RatingBar android:id="@+id/ratingbar3"
+                   style="@style/customRatingBarBig"
+                   android:layout_marginLeft="@dimen/common_margin"
+                   android:layout_toRightOf="@+id/find_item_view"
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/common_padding_middle"
+              android:background="@color/white"
+        >
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/quote_image"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:scaleType="centerCrop"
+                   android:layout_centerVertical="true"
+                   android:src="@drawable/icon_photo_default"/>
+
+        <TextView android:id="@+id/quote_price"
+                  style="@style/common_text"
+                  android:layout_width="wrap_content"
+                  android:text="￥1000.00"
+                  android:gravity="right"
+                  android:layout_centerVertical="true"
+                  android:textColor="@color/money_color"
+                  android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/common_padding_middle"
+                android:paddingRight="@dimen/common_padding_middle"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/quote_image"
+                android:orientation="vertical">
+
+            <TextView android:id="@+id/quote_title"
+                      style="@style/CommonTextView_Content"
+                      android:singleLine="true"
+                      android:text="@string/my_order_null"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/common_margin_top"
+                          android:gravity="center_vertical"
+                    >
+                <TextView
+                        style="@style/CommonTextView_Content"
+                        android:singleLine="true"
+                        android:text="等级："/>
+
+                <ImageView android:id="@+id/rank_image"
+                           android:layout_width="wrap_content"
+                           android:layout_height="16dp"
+                           android:scaleType="fitStart"
+                           android:src="@drawable/rank_image10"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical"
+                          android:layout_marginTop="@dimen/common_margin_top"
+                    >
+
+                <TextView android:id="@+id/quote_content1"
+                          style="@style/CommonTextView_Style"
+                          android:singleLine="true"
+                          android:textColor="@color/white"
+                          android:background="@color/bg_color"
+                          android:paddingLeft="3dp"
+                          android:paddingRight="3dp"
+                          android:text="现货"/>
+
+                <TextView android:id="@+id/quote_content2"
+                          style="@style/CommonTextView_Style"
+                          android:layout_marginLeft="@dimen/common_margin"
+                          android:singleLine="true"
+                          android:textColor="@color/white"
+                          android:paddingLeft="3dp"
+                          android:paddingRight="3dp"
+                          android:background="@color/blue"
+                          android:text="西城区"/>
+
+                <TextView android:id="@+id/quote_content3"
+                          style="@style/CommonTextView_Style"
+                          android:layout_marginLeft="@dimen/common_margin"
+                          android:textColor="@color/bg_color"
+                          android:singleLine="true"
+                          android:text="信用4.9分"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

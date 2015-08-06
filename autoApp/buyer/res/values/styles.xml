@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="android:Theme.NoTitleBar">
+    </style>
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--对话框-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Button-->
+    <style name="CommonButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingLeft">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+        <item name="android:background">@drawable/btn_bg_radius_selector</item>
+    </style>    <!--Button-->
+    <style name="CommonButtonMargin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingLeft">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+        <item name="android:background">@drawable/btn_bg_radius_selector</item>
+        <item name="android:layout_margin">@dimen/common_margin</item>
+    </style>
+
+    <!--Button-->
+    <style name="OrderButton" parent="CommonButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/text_orange</item>
+        <item name="android:textSize">@dimen/common_content_size</item>
+        <item name="android:background">@drawable/common_input_selector</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--new-->
+    <style name="common_text">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textColorHint">@color/grey_text</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!--TextView-->
+    <style name="CommonTextView_White" parent="common_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--TextView-->
+    <style name="CommonTextView_Selector" parent="common_text">
+        <item name="android:textColor">@color/common_text_color_selector</item>
+    </style>
+    <!--TextView-->
+    <style name="CommonTextView_Content" parent="common_text">
+        <item name="android:textSize">@dimen/common_content_size</item>
+    </style>
+    <!--TextView-->
+    <style name="CommonTextView_Content_Grey" parent="common_text">
+        <item name="android:textSize">@dimen/common_style_size</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+
+    <!--TextView-->
+    <style name="CommonTextView_Style" parent="common_text">
+        <item name="android:textSize">@dimen/common_style_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!--TextView-->
+    <style name="CommonTextView_Time" parent="common_text">
+        <item name="android:textSize">@dimen/common_time_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Line-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line_color</item>
+
+    </style>
+    <!-- Line-->
+    <style name="line_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/line_color</item>
+
+    </style>
+    <!-- RelativeLayout-->
+    <style name="my_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/common_margin_b</item>
+        <item name="android:paddingBottom">@dimen/common_margin_b</item>
+        <item name="android:paddingLeft">@dimen/common_padding</item>
+        <item name="android:paddingRight">@dimen/common_padding</item>
+        <item name="android:background">@drawable/listview_item_bg_selector</item>
+
+    </style>
+    <!-- RelativeLayout-->
+    <style name="inquiry_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">@dimen/common_padding_middle</item>
+        <item name="android:paddingRight">@dimen/common_padding_middle</item>
+        <item name="android:background">@drawable/listview_item_bg_selector</item>
+
+    </style>
+    <!-- RelativeLayout-->
+    <style name="order_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingBottom">@dimen/common_padding_small</item>
+        <item name="android:paddingLeft">@dimen/common_padding_middle</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!-- RelativeLayout-->
+    <style name="order_item_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/common_margin_b</item>
+        <item name="android:paddingBottom">@dimen/common_margin_b</item>
+        <item name="android:paddingRight">@dimen/common_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!-- RelativeLayout-->
+    <style name="inquiry_sort_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/common_margin</item>
+
+    </style>
+    <!-- ImageView-->
+    <style name="image_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/icon_right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- ImageView-->
+    <style name="main_item_image">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:src">@drawable/inquiry_icon1</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!-- ImageView-->
+    <style name="login_image">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/login_user</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <!-- 登录布局-->
+    <style name="login_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingLeft">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+    </style>
+
+    <!--Edittext-->
+    <style name="common_editText" parent="common_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/common_content_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PopupStyle">
+        <item name="android:windowEnterAnimation">@anim/product_popup_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/product_popup_anim_out</item>
+    </style>
+
+    <style name="customRatingBarBig" parent="android:Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:isIndicator">false</item>
+
+    </style>
+
+    <style name="customRatingBar" parent="android:Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_selector</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.1</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+
+</resources>

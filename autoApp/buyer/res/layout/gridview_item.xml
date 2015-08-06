@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="false">
+
+    <RelativeLayout android:layout_width="@dimen/photo_view"
+                    android:layout_height="@dimen/photo_view">
+
+        <ImageView android:id="@+id/grid_image"
+                   android:layout_width="@dimen/photo_view_size"
+                   android:layout_height="@dimen/photo_view_size"
+                   android:scaleType="centerCrop"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/icon_photo_default"/>
+
+        <ImageView  android:id="@+id/grid_del"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:visibility="invisible"
+                   android:src="@drawable/icon_delete"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

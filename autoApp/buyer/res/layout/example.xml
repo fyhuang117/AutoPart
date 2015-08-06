@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Steven Rudenko
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#333333"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:onClick="onActionsButtonClick"
+                android:src="@drawable/icon_back"/>
+
+    </LinearLayout>
+
+
+    <shared.ui.actionscontentview.ActionsContentView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/actionsContentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:actions_layout="@layout/actions"
+            android:layout_above="@+id/bottomBar"
+            android:layout_below="@+id/top_view"
+            app:actions_spacing="44dp"
+            app:content_layout="@layout/content"
+            app:fade_max_value="@integer/default_pref_fade_max_value"
+            app:fade_type="actions"
+            app:fling_duration="@integer/default_pref_fling_delay"
+            app:shadow_drawable="@drawable/shadow"
+            android:background="@color/black"
+            app:shadow_width="@dimen/default_pref_shadow_width"/>
+
+</RelativeLayout>

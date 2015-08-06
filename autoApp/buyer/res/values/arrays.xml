@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2012 Steven Rudenko
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+    <!-- Action titles -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_sandbox">Sandbox</string>
+    <string name="action_effects">Effects</string>
+    <string name="action_bookmarks">Bookmarks</string>
+
+    <!-- Actions -->
+    <array name="actions_icons">
+        <item>@null</item>
+        <item>@drawable/ic_action_about</item>
+        <item>@drawable/ic_action_settings</item>
+        <item>@drawable/ic_action_effects</item>
+        <item>@null</item>
+        <item>@drawable/ic_link_dropbox</item>
+        <item>@drawable/ic_link_evernote</item>
+        <item>@drawable/ic_link_facebook</item>
+        <item>@drawable/ic_link_github</item>
+        <item>@drawable/ic_link_google_plus</item>
+        <item>@drawable/ic_link_lastfm</item>
+        <item>@drawable/ic_link_linkedin</item>
+        <item>@drawable/ic_link_skype</item>
+        <item>@drawable/ic_link_stackoverflow</item>
+        <item>@drawable/ic_link_twitter</item>
+        <item>@drawable/ic_link_vk</item>
+        <item>@drawable/ic_link_yandex</item>
+        <item>@drawable/ic_link_youtube</item>
+    </array>
+
+    <string-array name="actions_names">
+        <item>@string/action_settings</item>
+        <item>@string/action_about</item>
+        <item>@string/action_sandbox</item>
+        <item>@string/action_effects</item>
+        <item>@string/action_bookmarks</item>
+        <item>Dropbox</item>
+        <item>Evernote</item>
+        <item>Facebook</item>
+        <item>GitHub</item>
+        <item>Google+</item>
+        <item>Last.fm</item>
+        <item>LinkedIn</item>
+        <item>Skype</item>
+        <item>Stackoverflow</item>
+        <item>Twitter</item>
+        <item>Vk</item>
+        <item>Yandex</item>
+        <item>Youtube</item>
+    </string-array>
+    <string-array name="actions_links">
+        <item>category://settings</item>
+        <item>settings://about</item>
+        <item>settings://sandbox</item>
+        <item>settings://effects</item>
+        <item>category://bookmarks</item>
+        <item>http://www.dropbox.com</item>
+        <item>http://www.evernote.com</item>
+        <item>http://www.facebook.com</item>
+        <item>http://www.github.com</item>
+        <item>http://plus.google.com</item>
+        <item>http://www.lastfm.com</item>
+        <item>http://www.linkedin.com</item>
+        <item>http://www.skype.com</item>
+        <item>http://www.stackoverflow.com</item>
+        <item>http://www.twitter.com</item>
+        <item>http://www.vk.com</item>
+        <item>http://www.yandex.com</item>
+        <item>http://www.youtube.com</item>
+    </string-array>
+
+    <string-array name="drawer_items">
+        <item>我的消息</item>
+        <item>优惠券</item>
+        <item>分享</item>
+        <item>应用信息</item>
+    </string-array>
+
+
+    <string-array name="avis">
+        <item>非现货</item>
+        <item>现货</item>
+    </string-array>
+
+    <string-array name="avis_text">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+
+    <string-array name="pay">
+        <item>在线支付</item>
+        <item>当面付款</item>
+        <item>快递代收</item>
+    </string-array>
+
+    <string-array name="parttype_quality">
+        <item>副厂</item>
+        <item>原厂</item>
+    </string-array>
+
+    <string-array name="del">
+        <item>自提</item>
+        <item>快递</item>
+    </string-array>
+
+    <string-array name="sort_list">
+        <item>商户等级</item>
+        <item>商户信用</item>
+        <item>价格从低到高</item>
+        <item>价格从高到低</item>
+        <item>距离</item>
+    </string-array>
+
+    <string-array name="filter_list">
+        <item>非现货</item>
+        <item>现货</item>
+    </string-array>
+
+    <string-array name="audit_array">
+        <item>未审核</item>
+        <item>审核通过</item>
+        <item>审核未通过</item>
+        <item>待审核</item>
+    </string-array>
+
+    <!--0是未申请审核 1-审核通过 2-审核不通过 3-待审核-->
+
+    <!--"avi":"是否现货(int)",-->
+    <!--"qau":"质保(int)",-->
+    <!--"pay":"支付方式(int)",-->
+    <!--"del":"交付方式(int)",-->
+
+</resources>

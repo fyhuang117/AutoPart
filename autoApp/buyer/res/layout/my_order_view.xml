@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/inquiry_seller_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/background"
+        >
+    <include layout="@layout/common_top_bar"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:paddingTop="@dimen/common_padding_middle"
+            android:paddingBottom="@dimen/common_padding_middle"
+            android:background="@color/white">
+
+        <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextView_Content"
+                android:text="综合推荐"
+                />
+        <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextView_Content"
+                android:text="平台推荐"
+                />
+        <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextView_Content"
+                android:textColor="@color/text_orange"
+                android:text="价格"
+                />
+        <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextView_Content"
+                android:text="信誉"
+                />
+        <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                style="@style/CommonTextView_Content"
+                android:text="距离最近"
+                />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/listView_parent"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="@dimen/common_padding_middle">
+
+        <ListView
+                android:id="@+id/mListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/common_padding_middle"
+                android:listSelector="@drawable/listview_item_bg_selector"
+                android:scrollbars="none"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:cacheColorHint="@color/transparent"
+                />
+    </LinearLayout>
+
+</LinearLayout>

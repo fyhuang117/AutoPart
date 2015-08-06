@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Banks>
+  <Bank ID="1" BankName="中国工商银行">中国工商银行</Bank>
+  <Bank ID="2" BankName="中国农业银行">中国农业银行</Bank>
+  <Bank ID="3" BankName="中国建设银行">中国建设银行</Bank>
+  <Bank ID="4" BankName="中国银行">中国银行</Bank>
+  <Bank ID="5" BankName="交通银行">交通银行</Bank>
+  <Bank ID="6" BankName="招商银行">招商银行</Bank>
+  <Bank ID="7" BankName="平安银行">平安银行</Bank>
+  <Bank ID="8" BankName="中信银行">中信银行</Bank>
+  <Bank ID="9" BankName="兴业银行">兴业银行</Bank>
+  <Bank ID="10" BankName="中国民生银行">中国民生银行</Bank>
+  <Bank ID="11" BankName="中国光大银行">中国光大银行</Bank>
+</Banks>

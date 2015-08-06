@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="260dp"
+             android:layout_gravity="start"
+             android:layout_height="fill_parent"
+             android:id="@+id/drawer_view"
+             android:background="@color/white">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center_horizontal">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="user_info"
+                        android:paddingLeft="@dimen/common_padding_middle"
+                        android:paddingRight="@dimen/common_padding_middle"
+                        android:layout_marginTop="40dp">
+
+            <com.autoparts.buyers.view.imageview.CircleImageView
+                    android:id="@+id/icon_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_photo_default"/>
+
+            <TextView android:id="@+id/user_shop_name"
+                      android:layout_width="match_parent"
+                      android:layout_toLeftOf="@+id/right_icon"
+                      android:layout_toRightOf="@+id/icon_profile"
+                      style="@style/CommonTextView_Content"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/common_margin"
+                      android:text="北京回龙观小区"/>
+
+            <ImageView android:id="@+id/right_icon"
+                       style="@style/image_right"/>
+
+        </RelativeLayout>
+
+
+        <View style="@style/line"
+              android:layout_marginTop="@dimen/common_margin"
+              android:layout_height="2dp"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="30dp"
+              android:visibility="invisible"
+              android:background="@color/text_orange"/>
+
+        <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:choiceMode="singleChoice"
+                android:listSelector="@drawable/listview_item_bg_selector"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:layout_weight="1"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="30dp"
+                      android:gravity="center"
+                      android:paddingTop="@dimen/common_margin_top"
+                      android:paddingBottom="@dimen/common_margin_top"
+                      android:background="@drawable/custom_btn_bg"
+                      android:onClick="exit">
+
+            <ImageView android:id="@+id/menu_icon"
+                       android:layout_width="14dp"
+                       android:layout_height="14dp"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/menu_icon_exit"/>
+
+            <TextView android:id="@+id/user_exit"
+                      style="@style/CommonTextView_Content"
+                      android:layout_marginLeft="@dimen/common_margin_top"
+                      android:text="退出登录"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+        <!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/left_drawer"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:choiceModxxe="singleChoice"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:divider="@android:color/transparent"-->
+        <!--android:dividerHeight="0dp"-->
+        <!--android:layout_weight="1"/>-->
+

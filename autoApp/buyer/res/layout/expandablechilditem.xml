@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_padding_middle"
+            android:paddingTop="@dimen/common_padding"
+            android:paddingBottom="@dimen/common_padding"
+            android:background="@drawable/listview_item_bg_selector"
+            >
+
+        <TextView
+                android:id="@+id/child_content"
+                style="@style/CommonTextView_Content"
+                android:text="无姓名"
+                />
+
+    </RelativeLayout>
+</LinearLayout>

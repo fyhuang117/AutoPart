@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout android:id="@+id/inquiry_btn_view"
+                  android:layout_width="match_parent"
+                  android:visibility="gone"
+                  android:orientation="horizontal"
+                  android:gravity="right"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+            >
+
+        <Button android:id="@+id/order_contact"
+                style="@style/OrderButton"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="@string/order_text_contact"
+                />
+        <Button android:id="@+id/order_del"
+                style="@style/OrderButton"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="@string/order_text_del"/>
+
+        <Button android:id="@+id/order_pay"
+                style="@style/OrderButton"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="@string/order_text_pay"/>
+
+        <Button android:id="@+id/order_evaluate"
+                style="@style/OrderButton"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="@string/order_text_evaluate"/>
+
+        <Button android:id="@+id/order_receipt"
+                style="@style/OrderButton"
+                android:focusable="false"
+                android:layout_marginRight="@dimen/common_margin"
+                android:text="@string/order_text_receipt"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/inquiry_data_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:orientation="horizontal"
+                  android:gravity="right"
+                  android:visibility="visible"
+            >
+
+        <TextView android:id="@+id/inquiry_seller_num"
+                  style="@style/CommonTextView_Content"
+                  android:layout_marginRight="@dimen/common_margin"
+                  android:textColor="@color/grey_text"/>
+
+        <TextView android:id="@+id/inquiry_min_money"
+                  style="@style/CommonTextView_Content"
+                  android:textColor="@color/money_color"
+                  android:layout_marginRight="@dimen/common_margin"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

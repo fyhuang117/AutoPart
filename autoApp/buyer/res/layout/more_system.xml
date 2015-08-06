@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+<include layout="@layout/common_top_bar"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:layout_marginTop="@dimen/common_padding_middle"
+                  android:orientation="vertical">
+        <RelativeLayout style="@style/inquiry_relative">
+            <TextView style="@style/common_text"
+                      android:textColor="@color/light_grey"
+                      android:layout_centerVertical="true"
+                      android:text="@string/more_version"/>
+
+            <TextView android:id="@+id/version"
+                      style="@style/common_text"
+                      android:textColor="@color/light_grey"
+                      android:layout_alignParentRight="true"
+                      android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button style="@style/CommonButton"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="30dp"
+            android:text="@string/more_checkout"
+            android:onClick="commit"/>
+</LinearLayout>
+
